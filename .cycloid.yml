@@ -2,7 +2,7 @@
 version: '2'
 # Configuration of the Cycloid stack
 name: 'Cycloid worker'
-canonical: 'stack-cycloid-worker'
+canonical: 'stack-cycloid-worker-quota'
 status: 'public'
 description: |
   This stack will deploy a single Cycloid worker in a new VPC.

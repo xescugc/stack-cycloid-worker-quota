@@ -19,6 +19,8 @@ use_cases:
             - 20
             - 250
         required: true
+        quota_config:
+          type: "storage"
     - name: SSH Keypair to access new instances
       technologies: [pipeline]
       vars:
@@ -133,6 +135,11 @@ use_cases:
             - "t3a.medium"
             - "t3a.large"
         required: true
+        quota_config:
+          mapping:
+            "t3a.small": "2 cpu, 2048 memory"
+            "t3a.medium": "2 cpu, 4096 memory"
+            "t3a.large": "2 cpu, 8192 memory"
 
   - name: AWS Cloud Provider
     groups:
